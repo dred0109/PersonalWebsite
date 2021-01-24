@@ -1,7 +1,7 @@
 html {
-	overflow: hidden;
-/*   overflow-x: scroll;
-  overflow-y: hidden; */
+
+/*   overflow-x: scroll;*/
+  overflow-y: hidden; 
 }
 
 body {
