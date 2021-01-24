@@ -1,6 +1,7 @@
 html {
-  overflow-x: scroll;
-  overflow-y: hidden;
+	overflow: hidden;
+/*   overflow-x: scroll;
+  overflow-y: hidden; */
 }
 
 body {
