@@ -650,7 +650,7 @@ ul.social-network li {
 }
 
 /*	=====================================================================
-									Blog Page							
+				Blog Page							
 	===================================================================== */
 .blog-h2 {
   margin-left: 15rem;
@@ -691,21 +691,28 @@ ul.social-network li {
   overflow: hidden;
 }
 
-a, a:after, a:visited {
+a,
+a:after,
+a:visited {
   text-decoration: none;
   cursor: pointer;
   color: #000000;
 }
 
-a.text-color-white, a.text-color-white:after, a.text-color-white:visited {
+a.text-color-white,
+a.text-color-white:after,
+a.text-color-white:visited {
   color: #ffffff;
 }
 
-a.text-color-red, a.text-color-red:after, a.text-color-red:visited {
+a.text-color-red,
+a.text-color-red:after,
+a.text-color-red:visited {
   color: #ea0f1e;
 }
 
-.on-hover-40, .on-hover--40 {
+.on-hover-40,
+.on-hover--40 {
   -webkit-transition: all 0.4s cubic-bezier(0.2, 0.6, 0.2, 1);
   transition: all 0.4s cubic-bezier(0.2, 0.6, 0.2, 1);
 }
@@ -777,23 +784,23 @@ a.text-color-red, a.text-color-red:after, a.text-color-red:visited {
 }
 
 .delay02 {
-  -webkit-animation-delay: .2s;
-  animation-delay: .2s;
+  -webkit-animation-delay: 0.2s;
+  animation-delay: 0.2s;
 }
 
 .delay04 {
-  -webkit-animation-delay: .4s;
-  animation-delay: .4s;
+  -webkit-animation-delay: 0.4s;
+  animation-delay: 0.4s;
 }
 
 .delay06 {
-  -webkit-animation-delay: .6s;
-  animation-delay: .6s;
+  -webkit-animation-delay: 0.6s;
+  animation-delay: 0.6s;
 }
 
 .delay08 {
-  -webkit-animation-delay: .8s;
-  animation-delay: .8s;
+  -webkit-animation-delay: 0.8s;
+  animation-delay: 0.8s;
 }
 
 .delay10 {
@@ -814,7 +821,7 @@ a.text-color-red, a.text-color-red:after, a.text-color-red:visited {
   bottom: 0;
   left: 35%;
   background: -webkit-gradient(linear, left top, left bottom, from(rgba(0, 0, 0, 0.5)), to(rgba(0, 0, 0, 0.5))), url(..//Alex_portfolio/images/bg-blog.png);
-  background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url(images/bg-blog.png);
+  background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url(..//Alex_portfolio/images/bg-blog.png);
   background-repeat: no-repeat;
   background-size: cover;
   background-position: center;
@@ -827,11 +834,20 @@ a.text-color-red, a.text-color-red:after, a.text-color-red:visited {
   .hide-mobile {
     display: none;
   }
+  .bg-photo {
+    background-size: cover;
+    background-position: cover;
+  }
 }
 
 @media screen and (max-width: 767px) {
+  .website-background-black {
+    overflow-x: hidden;
+    overflow-y: scroll;
+  }
   .bg-photo {
-    right: -40%;
+    right: -80%;
+    left: 0;
     background-size: cover;
   }
   .blog-h2 {
@@ -850,37 +866,74 @@ a.text-color-red, a.text-color-red:after, a.text-color-red:visited {
     width: 100%;
     height: 100%;
   }
-  .tap-indication {
-    text-align: center;
-    width: 100%;
-    font-family: "Medium";
-    color: #ffffff;
-    position: fixed;
-    bottom: 4%;
-    font-size: 0.6em;
-    font-size: 3.6vmin;
-    animation: bounce 1s infinite alternate;
-    -webkit-animation: bounce 0.5s cubic-bezier(0.5, 0.6, 0.6, 1) infinite alternate;
-    animation: bounce 0.5s cubic-bezier(0.5, 0.6, 0.6, 1) infinite alternate;
-  }
-  @keyframes bounce {
-    from {
-      -webkit-transform: translateY(0px);
-              transform: translateY(0px);
-    }
-    to {
-      -webkit-transform: translateY(-8px);
-              transform: translateY(-8px);
-    }
+  .animate {
+    -webkit-animation: animate 1s cubic-bezier(0.5, 0.6, 0.2, 1);
+    animation: animate 1s cubic-bezier(0.5, 0.6, 0.2, 1);
+    -webkit-animation-fill-mode: backwards;
+    animation-fill-mode: backwards;
+    -webkit-animation-timing-function: cubic-bezier(0.28, 0.84, 0.42, 1);
+            animation-timing-function: cubic-bezier(0.28, 0.84, 0.42, 1);
+    -webkit-animation-name: bounce;
+            animation-name: bounce;
   }
   @-webkit-keyframes bounce {
-    from {
-      -webkit-transform: translateY(0px);
-              transform: translateY(0px);
+    0% {
+      -webkit-transform: scale(1, 1) translateY(0);
+              transform: scale(1, 1) translateY(0);
     }
-    to {
-      -webkit-transform: translateY(-8px);
-              transform: translateY(-8px);
+    10% {
+      -webkit-transform: scale(1.1, 0.9) translateY(0);
+              transform: scale(1.1, 0.9) translateY(0);
+    }
+    30% {
+      -webkit-transform: scale(0.9, 1.1) translateY(-100px);
+              transform: scale(0.9, 1.1) translateY(-100px);
+    }
+    50% {
+      -webkit-transform: scale(1.05, 0.95) translateY(0);
+              transform: scale(1.05, 0.95) translateY(0);
+    }
+    57% {
+      -webkit-transform: scale(1, 1) translateY(-7px);
+              transform: scale(1, 1) translateY(-7px);
+    }
+    64% {
+      -webkit-transform: scale(1, 1) translateY(0);
+              transform: scale(1, 1) translateY(0);
+    }
+    100% {
+      -webkit-transform: scale(1, 1) translateY(0);
+              transform: scale(1, 1) translateY(0);
+    }
+  }
+  @keyframes bounce {
+    0% {
+      -webkit-transform: scale(1, 1) translateY(0);
+              transform: scale(1, 1) translateY(0);
+    }
+    10% {
+      -webkit-transform: scale(1.1, 0.9) translateY(0);
+              transform: scale(1.1, 0.9) translateY(0);
+    }
+    30% {
+      -webkit-transform: scale(0.9, 1.1) translateY(-100px);
+              transform: scale(0.9, 1.1) translateY(-100px);
+    }
+    50% {
+      -webkit-transform: scale(1.05, 0.95) translateY(0);
+              transform: scale(1.05, 0.95) translateY(0);
+    }
+    57% {
+      -webkit-transform: scale(1, 1) translateY(-7px);
+              transform: scale(1, 1) translateY(-7px);
+    }
+    64% {
+      -webkit-transform: scale(1, 1) translateY(0);
+              transform: scale(1, 1) translateY(0);
+    }
+    100% {
+      -webkit-transform: scale(1, 1) translateY(0);
+              transform: scale(1, 1) translateY(0);
     }
   }
 }
