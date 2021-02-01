@@ -177,8 +177,12 @@ section {
 }
 
 .hero-text .btn-gradient:hover:before {
-  opacity: 1;
-  color: #fff;
+  		content: "Click me";
+               line-height: 3.3rem;
+                text-align: center;
+         
+                opacity: 100%;
+                color: #fff;
 }
 
 .hero-text .ico02 {
@@ -289,8 +293,8 @@ section {
 }
 
 .hero-text .active .menu-object .ico01::after {
-  -webkit-transform: rotate(45deg);
-          transform: rotate(45deg);
+  -webkit-transform: rotate(23deg);
+          transform: rotate(23deg);
 }
 
 .home-services {
