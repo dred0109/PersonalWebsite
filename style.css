@@ -820,8 +820,8 @@ a.text-color-red:visited {
   right: 0;
   bottom: 0;
   left: 35%;
-  background: -webkit-gradient(linear, left top, left bottom, from(rgba(0, 0, 0, 0.5)), to(rgba(0, 0, 0, 0.5))), url(..//images/bg-blog.png);
-  background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url(..//Alex_portfolio/images/bg-blog.png);
+  background: -webkit-gradient(linear, left top, left bottom, from(rgba(0, 0, 0, 0.5)), to(rgba(0, 0, 0, 0.5))), url(/images/bg-blog.png);
+  background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url(/images/bg-blog.png);
   background-repeat: no-repeat;
   background-size: cover;
   background-position: center;
