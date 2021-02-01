@@ -288,8 +288,8 @@ section {
 }
 
 .hero-text .active .menu-object .ico01::before {
-  -webkit-transform: rotate(45deg);
-          transform: rotate(45deg);
+  -webkit-transform: rotate(23deg);
+          transform: rotate(23deg);
 }
 
 .hero-text .active .menu-object .ico01::after {
