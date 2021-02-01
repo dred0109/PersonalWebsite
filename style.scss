@@ -148,9 +148,13 @@ section {
             transition: all 500ms ease-in-out;
             background: linear-gradient(54.7deg, #0ad8c7 12%, #960ead 100%);
         }
-        &:hover {
+           &:hover {
             &:before {
-                opacity: 1;
+                content: "Click me";
+               line-height: 3.3rem;
+                text-align: center;
+           
+                opacity: 100%;
                 color: #fff;
             }
         }
@@ -231,10 +235,11 @@ section {
         & .menu-object {
             & .ico01 {
                 &::before {
-                    transform: rotate(45deg);
+                    transform: rotate(23deg);
+                 
                 }
                 &::after {
-                    transform: rotate(45deg);
+                    transform: rotate(23deg);
                 }
             }
         }
