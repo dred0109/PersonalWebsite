@@ -1,12 +1,13 @@
-html {
+/* html {
 
 overflow-x: hidden; 
   overflow-y: scroll; 
 }
-
+ */
 
 body {
-
+     overflow-x: hidden;
+     overflow-y: scroll;
   background-color: #f8f8f8 !important;
   margin: 0;
   height: 100vh;
