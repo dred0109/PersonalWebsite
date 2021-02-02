@@ -978,7 +978,9 @@ a.text-color-red:visited {
 .lightbox {
   pointer-events: none;
 }
-
+.container-about h3{
+	padding-bottom: 2rem;
+}
 .heading {
   padding-top: 4rem;
 }
